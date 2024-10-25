@@ -1,0 +1,305 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  min-width: 375px;
+}
+
+/* стили для шапки */
+
+.header {
+  min-width: 1280px;
+  min-height: 60px;
+}
+
+.logo {
+  margin-left: 64px;
+  margin-top: 18px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 64px;
+  box-shadow: 0 1px 3px 0 rgba(11, 12, 13, 0.16),
+    0 0 1px 0 rgba(11, 12, 13, 0.24);
+  background: #fff;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  margin-right: 12px;
+}
+
+/* --------------------------------------- */
+
+/* стили для формы */
+
+.main {
+  margin: 24px 64px;
+  border-radius: 4px;
+  padding: 24px;
+  min-width: 1152px;
+  min-height: 228px;
+  box-shadow: 0 8px 12px 0 rgba(11, 12, 13, 0.08),
+    0 16px 24px 0 rgba(11, 12, 13, 0.04), 0 1px 2px 0 rgba(11, 12, 13, 0.08);
+  background: #fff;
+  margin-bottom: 60px;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.part2 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.little-text {
+  font: 400 12px / 2 "Montserrat", sans-serif;
+  color: #919191;
+}
+
+.input-value {
+  font: 400 14px / 1.71429 "Montserrat", sans-serif;
+  color: #919191;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 6px 12px;
+  min-width: 344px;
+  min-height: 36px;
+  margin-bottom: 12px;
+}
+
+.input-value-dicription {
+  font: 400 14px / 1.71429 "Montserrat", sans-serif;
+  color: #919191;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 6px 12px;
+  min-width: 848px;
+  min-height: 84px;
+  margin-right: 24px;
+}
+
+.label {
+  font: 400 12px / 2 "Montserrat", sans-serif;
+  color: #919191;
+}
+
+.options {
+  min-width: 232px;
+  min-height: 108px;
+  margin-bottom: 12px;
+}
+
+fieldset {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+legend {
+  all: unset;
+  font: 400 14px / 1.71429 "Montserrat", sans-serif;
+  color: #919191;
+}
+
+.radio-list {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+.radio {
+  appearance: none;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: green;
+  cursor: pointer;
+}
+
+.radio[value="red"] {
+  background-color: #f37d7d;
+}
+
+.radio[value="green"] {
+  background-color: #c2f37d;
+}
+
+.radio[value="blue"] {
+  background-color: #7de1f3;
+}
+
+.radio[value="yellow"] {
+  background-color: #f3db7d;
+}
+
+.radio[value="purple"] {
+  background-color: #e77df3;
+}
+
+.radio:checked {
+  border-color: white;
+  box-shadow: 0 0 0 3px white,
+    /* Внутренняя обводка для создания промежутка */ 0 0 0 4.5px #007bff; /* Внешняя обводка */
+}
+
+.btn {
+  font: 500 16px / 1.5 "Montserrat", sans-serif;
+  color: #fff;
+  border-radius: 10px;
+  padding: 6px 24px;
+  width: 232px;
+  height: 36px;
+  background: #457cdc;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.small-img {
+  margin-right: 8px;
+}
+
+/* ------------------------------------ */
+
+.text {
+  font: 500 16px / 1.5 "Montserrat", sans-serif;
+  color: #000;
+}
+
+/* Стили для заметок */
+
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 24px 64px;
+  border-radius: 4px;
+  min-width: 1152px;
+  min-height: 228px;
+}
+
+.notes-list p {
+  grid-column: 2 / 3; 
+  grid-row: 1 / 2; 
+  margin: 0 auto; 
+  max-width: 400px; /* Ограничение ширины блока */
+  text-align: center;
+}
+
+.note-item {
+  margin-bottom: 12px;
+  border-radius: 10px;
+  min-width: 368px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(11, 12, 13, 0.08), 0 8px 16px 0 rgba(11, 12, 13, 0.04), 0 1px 2px 0 rgba(11, 12, 13, 0.08);
+  
+}
+
+.note-item h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 8px;
+  font: 500 16px / 1.5 "Montserrat", sans-serif;
+  color: #3d4d27;
+  height: 40px;
+  padding: 12px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.note-item h3 .buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.note-item h3 .buttons button {
+  background: none;
+  border: none;
+  color: #3d4d27;
+  gap: 12px;
+  height: 16px;
+  align-items: center;
+}
+
+.note-item h3 .buttons button:hover {
+  color: #007bff;
+}
+
+.note-item h3 .buttons img {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+
+}
+.note-item p {
+  margin: 0;
+  font: 400 14px / 1.71429 "Montserrat", sans-serif;
+  color: #000;
+  padding: 12px;
+}
+
+.heart{
+align-items: end;
+}
+
+
+.text-message {
+  text-align: center;
+}
+
+/* Стили для сообщений */
+.messages-box {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  padding: 12px 24px;
+  width: fit-content;
+  height: fit-content;
+}
+
+/*  */
+
+#filter-row {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  justify-content: flex-end;
+  margin-right: 64px;
+}
+
+#filter-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+
