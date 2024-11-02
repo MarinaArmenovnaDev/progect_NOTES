@@ -1,10 +1,3 @@
-const colors = {
-  GREEN: 'green',
-  BLUE: 'blue',
-  RED: 'red',
-  YELLOW: 'yellow',
-  PURPLE: 'purple',
-};
 
 const noteColors = {
   blue: '#7de1f3',
@@ -110,7 +103,6 @@ const view = {
 
             favoriteButton.addEventListener('click', () => {
               note.isFavorite = !note.isFavorite;
-              heart.src = note.isFavorite ? './assets/heart active.png' : './assets/heart inactive.png';
               model.updateNotesView();
             });
 
@@ -181,9 +173,6 @@ const view = {
     this.noteDescriptionInput.value = '';
   },
 
-  clearTitleInput() {
-    this.noteTitleInput.value = '';
-  }
 };
 
 const controller = {
@@ -211,3 +200,5 @@ view.init();
 }
 
 init();
+
+
