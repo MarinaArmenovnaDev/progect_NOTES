@@ -141,7 +141,7 @@ const view = {
     text.textContent = message;
     text.style.backgroundColor = color;
     text.style.color = '#fff';
-    text.style.font = '500 14px / 1.71429 "Montserrat", sans-serif';
+    text.style.font = '500 14px / 1.71429';
     this.messagesBox.appendChild(text);
     this.messagesBox.style.backgroundColor = color;
 
